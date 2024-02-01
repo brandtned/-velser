@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Drinks</h1>
+    <template id="drinks">
+    <article>
+        <h2></h2>
+        <img src="" alt=""
+    <p></p>
+    </article>
+    </template>
+
+
+    <script>
+        const drinks = [
+            
+        {
+            navn: "Gin Hass",
+            ingredienser:["Hendricks Gin", "Shake-It Mixer Mango", "Friskpresset limesaft", "Lemon sodavand"],
+            smag:"Utrolig frisk drink med smag af lemon og mango",
+            pynt: ["Citron", "Mynteblade", "Isterninger"],
+            glastype: ["Lowball glas"],
+            billede: "Gin-Hass-5.jpeg"
+        },
+    
+        {
+            navn: "Aperol Spritz",
+            ingredienser:["Prosecco", "Aperol", "Danskvand"],
+            smag:"Bittersød smag af appelsiner, urter og rabarber",
+            pynt: ["Appelsiner", "Isterninger"],
+            glastype: ["Vinglas"],
+            billede: "aperol-spritz-recipe-2.jpeg"
+        },
+        {
+
+        }
+    ]
+
+        const skabelon = document.querySelector("template").content;
+
+        drinks.forEach(visDrink);
+
+        function visDrink(drinks){
+            const klon= skabelon.cloneNode(true);
+            console.log (klon);
+            const p= klon.querySelector("p");
+            const h2= klon.querySelector("h2");
+            const img= klon.querySelector("img");
+            h2.textContent = "Navn : " + drinks.navn;
+            p.textContent += "ingredienser: " + drinks.ingredienser;
+        }
+
+
+       
+
+    </script>
+</body>
+</html>

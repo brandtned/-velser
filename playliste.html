@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Øvelse Playliste</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <h1>Øvelse: Playliste</h1>
+        <ul></ul>
+    </main>
+    <footer></footer>
+    <script>
+        const numre = ["Two of Us", "Dig a Pony","I Me Mine", "Dig it", "Let it Be", "Maggie Mae", "One after 909", "For you blue", "Get Back"]
+        const ul = document.querySelector("ul")
+
+        numre.forEach(bygListe);
+
+        function bygListe(elm) {
+            console.log(elm)
+            ul.innerHTML += "<li>" + elm + "</li>";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Mit band</h1>
+    <p></p>
+
+
+    <script>
+        const yndlingsBand = {
+            navn: "Fredagain",
+            dannet:"2010",
+            albums:["sidste sommer", "Næste jul", 5],
+            medlemmer: ["Peter", "Jytte", "Niels"]
+
+        }
+
+        const p =document.querySelector("p");
+
+        p.textContent = "Mit yndlingsband er: " + yndlingsBand.navn;
+
+        p.textContent += ". Det er dannet i: " + yndlingsBand.dannet;
+
+        p.textContent += ". Forsangeren er : " + yndlingsBand.medlemmer [2];
+
+
+    </script>
+</body>
+</html>
